@@ -11,3 +11,6 @@
 
 以下是部分游戏效果图
 
+![Image text](https://github.com/doFighter/python-PlaneGame/blob/master/rendering/PlaneGame01.png)
+
+![Image text](https://github.com/doFighter/python-PlaneGame/blob/master/rendering/PlaneGame02.png)
