@@ -71,10 +71,10 @@ class PlaneGame(object):
 			#判断是否是 pygame 中的退出方法
 			if event.type == pygame.QUIT:
 				PlaneGame.__game_over()
-			elif event.type == CREATE_ENEMY_EVENT:
+			elif not self.pause and event.type == CREATE_ENEMY_EVENT:
 				enemy = Enemy()
 				self.enemy_group.add(enemy)
-			elif event.type == HERO_FIRE_EVENT and self.flag:
+			elif not self.pause and event.type == HERO_FIRE_EVENT and self.flag:
 				self.hero.fire()
 			elif self.flag and (event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE or event.type == pygame.MOUSEBUTTONDOWN):
 				self.showImage_group = pygame.sprite.Group(self.imageShow)
